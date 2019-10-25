@@ -1,4 +1,4 @@
-# react-suspense-prview
+# react-suspense-preview
 
 A working demo of React Suspense and axios data fetching.
 
