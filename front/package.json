@@ -13,8 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-react-cache": "git clone git@github.com:facebook/react.git --depth=1 && cd react && yarn install --frozen-lockfile && npm run build react-cache && cd .. && npm pack ./react/build/node_modules/react-cache && rm -rf react"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

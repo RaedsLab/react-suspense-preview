@@ -49,11 +49,13 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <React.Suspense fallback={<Loading />} maxDuration={1000}>
-          <Profile />
-          <Posts />
-          <ErrorBoundary fallback={<p>Could not fetch</p>}>
-            <Fail />
+        <React.Suspense fallback={<Loading />}>
+          <ErrorBoundary fallback={<p>Global error</p>}>
+            <Profile />
+            <Posts />
+            <ErrorBoundary fallback={<p>Could not fetch</p>}>
+              <Fail />
+            </ErrorBoundary>
           </ErrorBoundary>
         </React.Suspense>
       </header>
