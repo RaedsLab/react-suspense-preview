@@ -1,0 +1,12 @@
+{
+  "name": "react-concurrent",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "yarn start & cd ./front && yarn start",
+    "start": "node index.js"
+  },
+  "license": "UNLISENCED",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
